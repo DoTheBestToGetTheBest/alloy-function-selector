@@ -1,2 +1,8 @@
-# alloy-function-selector
-Parse Ethereum function signatures and convert function names into selector byte sequences, essential for smart contract interactions.
+## Usage
+
+
+```rust
+let signature = "function approve(address,uint256)";
+let selector = Selector::new(signature.to_string());
+let selector_bytes = selector.turn_function_name_to_bytes().unwrap();
+``` 
